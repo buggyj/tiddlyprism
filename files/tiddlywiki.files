@@ -1,0 +1,29 @@
+{
+	"tiddlers": [
+		{
+			"file": "prismjs.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "$:/plugins/bj/tiddlyprism/prismjs.js",
+				"module-type": "library"
+			}
+		},
+		{
+			"file": "prismautoloader.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "$:/plugins/bj/tiddlyprism/prismautoloader.js",
+				"module-type": "library"
+			}
+		},
+		{
+			"file": "prismjs.css",
+			"fields": {
+				"type": "text/css",
+				"tags": "$:/tags/Stylesheet",
+				"title": "$:/plugins/bj/tiddlyprism/prismjs.css",
+				"module-type": "library"
+			}
+		}
+	]
+}

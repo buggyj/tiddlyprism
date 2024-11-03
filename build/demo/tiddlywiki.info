@@ -1,0 +1,13 @@
+{
+	"plugins": [
+		"bj/tiddlyprism"
+	],
+	"themes": [
+		"tiddlywiki/vanilla",
+		"tiddlywiki/snowwhite"
+	],
+	"doNotSave": [
+	],
+	"includeWikis": [
+	]
+}

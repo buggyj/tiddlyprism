@@ -1,0 +1,63 @@
+{
+	"tiddlers": [{
+		"file": "license.tid",
+		"fields": {
+			"type": "text/plain",
+			"title": "$:/plugins/bj/tiddlyprism/license"
+		}
+	},
+	{
+		"file": "prismtw.css",
+		"fields": {
+			"type": "text/css",
+			"tags": "$:/tags/Stylesheet",
+			"title": "$:/plugins/bj/tiddlyprism/prismtw.css",
+			"module-type": "library"
+		}
+	},
+	{
+		"file": "readme.tid",
+		"fields": {
+			"title": "$:/plugins/bj/tiddlyprism/readme"
+		}
+	},	
+	{
+		"file": "mappings.json.tid",
+		"fields": {
+			"title": "$:/plugins/bj/tiddlyprism/mappings.json",
+            "type":"application/json"
+		}
+	},
+	{
+		"file": "javascript.tid",
+		"fields": {
+			"title": "$:/config/tiddlyprism/TypeMappings/application/javascript"
+		}
+	},
+	{
+		"file": "options.json.tid",
+		"fields": {
+			"title": "$:/plugins/bj/tiddlyprism/options.json",
+            "type":"application/json"
+		}
+	},
+	{
+		"file": "twparsering.js",
+		"fields": {
+			"type": "application/javascript",
+			"title": "$:/plugins/bj/tiddlyprism/twparsering.js",
+			"module-type": "library"
+		}
+	},
+    {
+		"file": "highlight-tp.js",
+		"fields": {
+			"type": "application/javascript",
+			"title": "$:/plugins/bj/tiddlyprism/highlight-tp.js",
+			"module-type": "widget"
+		}
+	}],
+	 "directories": [
+		"files"
+	 ]
+}

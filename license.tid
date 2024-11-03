@@ -1,0 +1,11 @@
+title: $:/plugins/bj/tiddlyprism/license
+
+
+Prism.js - Syntax highlighting library
+Copyright © Lea Verou and contributors
+Licensed under the MIT License (MIT). See LICENSE for details.
+
+
+tiddlyprism.js - tiddlywiki - prism interface and highlighter rules and css
+Copyright © Jeffrey Wilkinson aka bj
+Licensed under the MIT License (MIT). See LICENSE for details.

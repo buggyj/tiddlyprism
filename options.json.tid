@@ -1,0 +1,7 @@
+{
+	"defaultTheme": true,
+	"lineNumbers": true,
+	"copyButton": true,
+	"maxLines" : 100,
+	"minLines" : 100
+}
