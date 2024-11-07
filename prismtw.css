@@ -1,12 +1,13 @@
-.unieditor .language-tw, .unieditor .lang-tw  {
-   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
-    white-space:  pre-wrap;
+ .language-tw, .unieditor .language-tw, .unieditor .lang-tw  {
+   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif!important;
+   /*white-space:  pre-wrap;*/
  }
 
 span.token.twhanging, span.token.twbold{
 /*font-weight: bold;*/
-  color:black!important;
-  text-shadow: 0.0px 0.0px 0 black;
+;
+  text-shadow: 0.3px 0.3px 0 currentColor;
+  
 }
 
 .token.code_section :not(.punctuation) {
@@ -22,7 +23,6 @@ span.token.twhanging, span.token.twbold{
 }
 span.token.twdefs, span.token.twcode {
 	color: red;
-   background: #eee;
 }
 .token.inline_style {
   color:orange;
@@ -48,21 +48,21 @@ display: inline-block;
 
 .token.tw_important1 {
 display: inline-block;
- transform: scaleY(2.0);
+ transform: scaleY(2.2);
  position: relative;
  bottom: +3px;
 }
 
 .token.tw_important2 {
 display: inline-block;
- transform: scaleY(1.5);
+ transform: scaleY(1.7);
  position: relative;
 }
 
 
 .token.tw_important3 {
 display: inline-block;
- transform: scaleY(1.2);
+ transform: scaleY(1.22);
  position: relative;
 }
 .token.tw_important {
