@@ -32,16 +32,17 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
 		lookbehind: true,
         greedy: true
       },
-      //=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'">=]+)
-      //pattern:/<<[^<\s`]+?[\s\S]*?>>/m,
 'macro':{
-        pattern:/<<[^<\s`]+?\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'">=]+)>>/,
+        pattern:/<<[^<\s`]+?[\s\S]*?>>/,
 		lookbehind: false,
         greedy: true,
 		inside: {
-			'content': {
-				pattern: /(^..)[\s\S]+(?=..$)/,
-				lookbehind: true
+			'attr-value': {
+				pattern: /(<<[^<\s`]+? )[\s\S]*?(>>)/,
+				lookbehind: true,
+                inside: {
+                    'punctuation': /<<|>>/
+                }
 			},
 			'punctuation': /<<|>>/
           }
@@ -171,9 +172,6 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
 Prism.languages.insertBefore('tw', 'tag', {
     'transclude': /\{\{\{.*?\}\}\}/
 });
-//'transclude': /[^=]\{\{\{.*?\}\}\}/
-//Prism.languages.tw.tag.pattern = new RegExp(Prism.languages.tw.tag.pattern.source.replace(/\$[^\/]/,""))
-
-                                 Prism.languages.tw.tag.inside['attr-value'].pattern=/=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'">=]+)/ 
+Prism.languages.tw.tag.inside['attr-value'].pattern=/=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'">=]+)/ 
 Prism.languages.tw.tag.pattern =/([^<])<\/?(?![\d<])[^\s>`<>\/=%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'"=]+(?:>>)?(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/g
 Prism.languages.tw.tag.lookbehind=true
