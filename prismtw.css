@@ -19,7 +19,7 @@ span.token.twhanging, span.token.twbold{
 }
 
 .token.urlstring {
-	color: #07a;
+	color: violet;
 }
 span.token.twdefs, span.token.twcode {
 	color: red;
