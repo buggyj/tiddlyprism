@@ -10,7 +10,7 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
 'twhanging':/;.*?\n:/m,
 'transcludeA':/{{[^}{}]*?}}/,
 'twlink':{
-        pattern:/\[(?:ext|img|)\[[^\]]*?\]\]/,
+        pattern:/\[(?:ext|img|)\[[^\]\n]*?\]\]/,
 		lookbehind: true,
         greedy: true
       },
@@ -48,34 +48,37 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
           }
 },
 'twdefs':/^\\\S*/gm,
-        'tw_important1': {
+   'tw_important1': {
 				// ! title 
 				
-				pattern: /(^\s*)![^!].*/m,
+				pattern: /^(^\s*)![^!].*$/m,
 				lookbehind: true,
 				inside: {
-					punctuation: /^!+|!+$/
+					punctuation: /^!+|!+$/,
+                    content: /[\S]+/
 				}
 			},
-       'tw_important2': {
+   'tw_important2': {
 				// ! title 
 				
-				pattern: /(^\s*)!![^!].*/m,
+				pattern: /^(^\s*)!![^!].*$/m,
 				lookbehind: true,
 				inside: {
-					punctuation: /^!+|!+$/
+					punctuation: /^!+|!+$/,
+                    content: /[\S]+/
 				}
 			},
-       'tw_important3': {
+   'tw_important3': {
 				// ! title 
 				
-				pattern: /(^\s*)!!![^!].*/m,
+				pattern: /^(^\s*)!!![^!].*$/m,
 				lookbehind: true,
 				inside: {
-					punctuation: /^!+|!+$/
+					punctuation: /^!+|!+$/,
+                  content: /[\S]+/
 				}
 			},
-      'tw_important': {
+  'tw_important': {
 				// ! title 
 				
 				pattern: /(^\s*)!{4,6}.+/m,
@@ -121,7 +124,7 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
             }
 		},
 		'strike': {
-            pattern: /~~.*?~~/,
+        pattern: /~~.*?~~/,
 			lookbehind: true,
 			greedy: true,
 			inside: {
@@ -149,23 +152,23 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
 			lookbehind: true,
 			greedy: true,
 			inside: {
+                'punctuation': /\^\^/,
 				'content': {
-					pattern: /(^..)[\s\S]+(?=..$)/,
+					pattern: /[\S]+/,
 					lookbehind: true
-				},
-				'punctuation': /\^\^/
+				}				
             }
 		},
 		'subscript': {
-            pattern: /\,,.*?,,/,
+        pattern: /,,.*?,,/,
 			lookbehind: true,
 			greedy: true,
-			inside: {
+	  		inside: {
+                'punctuation': /,,/,
 				'content': {
-					pattern: /(^..)[\s\S]+(?=..$)/,
+					pattern: /[\S]+/,
 					lookbehind: true
-				},
-				'punctuation': /,,/
+				}                
             }
 		}
 });
@@ -174,3 +177,4 @@ Prism.languages.insertBefore('tw', 'tag', {
 });
 Prism.languages.tw.tag.inside['attr-value'].pattern=/=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'">=]+)/ 
 Prism.languages.tw.tag.pattern =/<\/?(?![\d<])[^\s>`<>\/=%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'"=]+(?:>>)?(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/g
+    

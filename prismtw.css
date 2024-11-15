@@ -33,34 +33,26 @@ span.token.twdefs, span.token.twcode {
 .token.underline {
   text-decoration: underline;
 }
-.token.subscript .content{
-display: inline-block;
- transform: scaleY(0.6);
- position: relative;
- bottom: -3px;
+.token.subscript > * {
+  color: green; 
 }
 .token.superscript .content{
-display: inline-block;
- transform: scaleY(0.6);
- position: relative;
- top: -3px;
+  color: green; 
 }
 
-.token.tw_important1 {
+
+.token.tw_important1 > * {
 display: inline-block;
- transform: scaleY(2.2);
+ transform: scaleY(2.0);
  position: relative;
  bottom: +3px;
 }
-
-.token.tw_important2 {
+.token.tw_important2 > * {
 display: inline-block;
  transform: scaleY(1.7);
  position: relative;
 }
-
-
-.token.tw_important3 {
+.token.tw_important3 > *{
 display: inline-block;
  transform: scaleY(1.22);
  position: relative;
