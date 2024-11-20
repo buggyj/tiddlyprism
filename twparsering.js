@@ -48,13 +48,23 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
           }
 },
 'twdefs':/^\\\S*/gm,
-   'tw_important1': {
+   'tw_important1a': {
 				// ! title 
 				
-				pattern: /^(^\s*)![^!].*$/m,
+				pattern: /^(^\s*)![^!].*\n/,
 				lookbehind: true,
 				inside: {
 					punctuation: /^!+|!+$/,
+                    content: /[\S]+/
+				}
+			},
+   'tw_important1': {
+				// ! title 
+				
+				pattern: /[\n](^\s*)![^!].*$/m,
+				lookbehind: true,
+				inside: {
+					punctuation: /!+/,
                     content: /[\S]+/
 				}
 			},
@@ -65,6 +75,7 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
 				lookbehind: true,
 				inside: {
 					punctuation: /^!+|!+$/,
+     whitespace:/ /,
                     content: /[\S]+/
 				}
 			},
@@ -175,6 +186,6 @@ Prism.languages['tw'] = Prism.languages.extend('html', {
 Prism.languages.insertBefore('tw', 'tag', {
     'transclude': /\{\{\{.*?\}\}\}/
 });
-Prism.languages.tw.tag.inside['attr-value'].pattern=/=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'">=]+)/ 
-Prism.languages.tw.tag.pattern =/<\/?(?![\d<])[^\s>`<>\/=%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'"=]+(?:>>)?(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/g
+Prism.languages.tw.tag.inside['attr-value'].pattern=/=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|`[^`]*`|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'">=]+)/ 
+Prism.languages.tw.tag.pattern =/<\/?(?![\d<])[^\s>`<>\/=%]+(?:\s(?:\s*[^\s>\/=]+(?:\s*=\s*(?:"""([\s\S]*?)"""|"[^"]*"|'[^']*'|`[^`]*`|\{\{\{(.*?)\}\}\}|\{\{([^{]*?)\}\}|<<.*?>>|[^\s'"=]+(?:>>)?(?=[\s>]))|(?=[\s/>])))+)?\s*\/?>/g
     

@@ -42,13 +42,20 @@ span.token.twdefs, span.token.twcode {
 
 
 .token.tw_important1 > .content ,.token.tw_important1a > .content {
- color: rgb(238, 153, 0);
+ display: inline-block;
+ transform: scaleY(2.0);
+ position: relative;
+ bottom: +3px;
 }
 .token.tw_important2 > .content {
- color: rgb(238, 153, 0);
+ display: inline-block;
+ transform: scaleY(1.7);
+ position: relative;
 }
 .token.tw_important3 > .content{
- color: rgb(238, 153, 0);
+  display: inline-block;
+  transform: scaleY(1.22);
+  position: relative;
 } 
 .token.tw_important {
 }

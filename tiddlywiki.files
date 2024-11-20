@@ -11,8 +11,14 @@
 		"fields": {
 			"type": "text/css",
 			"tags": "$:/tags/Stylesheet",
-			"title": "$:/plugins/bj/tiddlyprism/prismtw.css",
-			"module-type": "library"
+			"title": "$:/plugins/bj/tiddlyprism/prismtw.css"
+		}
+	},
+	{
+		"file": "prismtwexperimental.css",
+		"fields": {
+			"type": "text/css",
+			"title": "$:/plugins/bj/tiddlyprism/prismtwexperimental.css"
 		}
 	},
 	{
@@ -26,12 +32,6 @@
 		"fields": {
 			"title": "$:/plugins/bj/tiddlyprism/mappings.json",
             "type":"application/json"
-		}
-	},
-	{
-		"file": "javascript.tid",
-		"fields": {
-			"title": "$:/config/tiddlyprism/TypeMappings/application/javascript"
 		}
 	},
 	{
