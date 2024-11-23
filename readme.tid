@@ -1,3 +1,6 @@
-title: $:/plugins/bj/tiddlyprism/readme
+This plugin provides source code hightlighting, using the prismjs library: https://github.com/PrismJS/prism version 1.29.0
 
+The plugin includes the rules for highlighting css, html, javascript and other 'c' like languages, it also contains additional rules for tiddywiki markup.
+
+The rules for other languages are dynamically loaded from the internet, see https://prismjs.com/#supported-languages. Nearly 300 are supported.
 

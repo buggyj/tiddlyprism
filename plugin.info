@@ -3,8 +3,8 @@
 	"description": "hightlighter",
 	"name": "tiddlyprism",
 	"author": "Jeffrey Wilkinson (BJ)",
-	"version": "0.0.5",
-	"list": "readme license",
+	"version": "0.0.6",
+	"list": "readme license", 
 	"core-version": ">=5.3.5",
 	"source": "https://github.com/buggyj/tiddlyprism",
 	"plugin-type": "plugin"

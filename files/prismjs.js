@@ -18,4 +18,3 @@ Prism.languages.javascript=Prism.languages.extend("clike",{"class-name":[Prism.l
 
 Prism.manual = true
 module.exports=Prism
-Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/'

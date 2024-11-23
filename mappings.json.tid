@@ -1,5 +1,5 @@
 {
-	"application/javascript": "javascript",
+	"application/javascript": "js",
 	"text/css": "css",
 	"text/x-python": "py"
 }

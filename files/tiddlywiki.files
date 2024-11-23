@@ -9,14 +9,6 @@
 			}
 		},
 		{
-			"file": "prismautoloader.js",
-			"fields": {
-				"type": "application/javascript",
-				"title": "$:/plugins/bj/tiddlyprism/prismautoloader.js",
-				"module-type": "library"
-			}
-		},
-		{
 			"file": "prismjs.css",
 			"fields": {
 				"type": "text/css",
